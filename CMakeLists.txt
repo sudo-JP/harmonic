@@ -12,7 +12,11 @@ find_package(SndFile CONFIG REQUIRED)
 find_path(AUBIO_INCLUDE_DIR NAMES aubio/aubio.h REQUIRED)
 find_library(AUBIO_LIBRARY NAMES aubio REQUIRED)
 
-add_executable(harmonic src/main.cpp)
+add_executable(harmonic 
+    src/harmonia/harmonia.hpp
+    src/harmonia/harmonia.cpp
+    src/main.cpp
+)
 
 target_link_libraries(harmonic PRIVATE SndFile::sndfile)
 target_include_directories(harmonic PRIVATE ${AUBIO_INCLUDE_DIR})
