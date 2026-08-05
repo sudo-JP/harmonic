@@ -1,9 +1,9 @@
 #include <aubio/aubio.h>
 #include <print>
+#include "harmonia/harmonia.hpp"
 
 int main() {
-    int a = 0; 
-    a += 2; 
+    harmonic::Harmonia a; 
     std::println("Hello");
     return 0;
 }

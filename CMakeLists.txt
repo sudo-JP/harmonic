@@ -15,6 +15,8 @@ find_library(AUBIO_LIBRARY NAMES aubio REQUIRED)
 add_executable(harmonic 
     src/harmonia/harmonia.hpp
     src/harmonia/harmonia.cpp
+    src/audio_analyzer/audio_analyzer.hpp
+    src/audio_analyzer/audio_analyzer.cpp
     src/main.cpp
 )
 
